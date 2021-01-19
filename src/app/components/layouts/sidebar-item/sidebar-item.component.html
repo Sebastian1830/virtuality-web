@@ -1,1 +1,6 @@
-<p>sidebar-item works!</p>
+<div class="center-content is-pointer item mb-4" [ngClass]="{'closed': !openItem}" [routerLink]="link">
+    <i class="material-icons primary md-dark margin-auto" [ngClass]="openItem ? 'md-24 mr-2' : 'md-36'">{{ icon }}</i>
+    <span *ngIf="openItem">
+        <ng-content></ng-content>
+    </span>
+</div>

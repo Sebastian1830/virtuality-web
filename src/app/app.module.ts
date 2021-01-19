@@ -10,6 +10,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatIconModule } from '@angular/material/icon';
 
 // COMPONENTS
 import { PatientListComponent } from './components/patient-list/patient-list.component';
@@ -46,7 +47,8 @@ import { ContentViewComponent } from './components/layouts/content-view/content-
     MatFormFieldModule,
     MatSliderModule,
     MatButtonModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

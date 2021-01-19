@@ -1,0 +1,15 @@
+.center-content {
+    display: flex;
+    align-items: center;
+}
+
+.item {
+    object-fit: cover;
+    object-position: 0% 0;
+    width: 150px;
+    outline: 0;
+    transition: width 1s;
+    &.closed {
+        width: 43px;
+    }
+}

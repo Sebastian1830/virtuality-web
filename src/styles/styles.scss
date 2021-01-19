@@ -4,6 +4,7 @@
 $breadcrumb-divider: none;
 @import "../../node_modules/bootstrap/scss/bootstrap";
 @import "./variables/_bootstrap";
+@import "./icons/material-icon.scss";
 
 html {
     height: 100%;
@@ -25,4 +26,8 @@ body {
 
 .is-pointer {
     cursor: pointer;
+}
+
+.margin-auto {
+    margin: auto;
 }
