@@ -1,8 +1,18 @@
-<div class="">
-    <div class="navbar navbar-light bg-light">
-        navbar
+<div class="main-content">
+    <div id="left" class="column">
+        <div class="navbar navbar-light bg-light custom-height">
+            <ng-content select="[sidebar-header]"></ng-content>
+        </div>
+        <div class="custom-content bg-sidebar">
+            <ng-content select="[sidebar]"></ng-content>
+        </div>
     </div>
-    <div class="px-4 py-4 bg-primary is-fullheight">
-        <app-sidebar></app-sidebar>
+    <div id="right" class="column is-fullwidth">
+        <div class="navbar navbar-light bg-light custom-height">
+            <ng-content select="[navbar]"></ng-content>
+        </div>
+        <div class="custom-content bg-success">
+            <ng-content select="[app-content]"></ng-content>
+        </div>
     </div>
 </div>

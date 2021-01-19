@@ -4,7 +4,7 @@ import { countries } from '../../../data/example-chart-line';
 @Component({
   selector: 'content-view',
   templateUrl: './content-view.component.html',
-  styleUrls: ['./content-view.component.sass']
+  styleUrls: ['./content-view.component.scss']
 })
 export class ContentViewComponent implements OnInit {
   countries: any[] = [];

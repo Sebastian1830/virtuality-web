@@ -1,0 +1,30 @@
+@import '../../../../styles/styles.scss';
+
+.main-content {
+  display: flex;
+  height: 100%;
+}
+
+#left {
+  flex-shrink: 0;
+}
+
+.custom-column {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.custom-content {
+  flex-grow: 1;
+  overflow-y: auto;
+  height: 100%;
+}
+
+.custom-height {
+  height: 70px;
+}
+
+.bg-sidebar {
+  background-color: $sidebar;
+}

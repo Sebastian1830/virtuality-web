@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+// @import "~bootstrap/dist/css/bootstrap.css";
+/* Importing Bootstrap SCSS file. */
+$breadcrumb-divider: none;
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "./variables/_bootstrap";
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    overflow: hidden;
+    margin: 0px;
+}
+
+.is-fullheight {
+    height: 100% !important;
+}
+
+.is-fullwidth {
+    width: 100% !important;
+}
+
+.is-pointer {
+    cursor: pointer;
+}
