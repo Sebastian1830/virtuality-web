@@ -13,3 +13,11 @@
         width: 43px;
     }
 }
+
+.icon {
+    font-size: 24px;
+    transition: font-size 1s;
+    &.only-icon {
+        font-size: 36px;
+    }
+}

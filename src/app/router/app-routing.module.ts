@@ -1,9 +1,13 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { PatientListComponent } from '../components/patient-list/patient-list.component';
+import { PatientListPageComponent } from '../views/patient-list-page/patient-list-page.component';
+import { DashboardPageComponent } from '../views/dashboard-page/dashboard-page.component';
+import { RegisterPatientPageComponent } from '../views/register-patient-page/register-patient-page.component';
 
 const routes: Routes = [
-  { path: 'patient-list', component: PatientListComponent }
+  { path: 'dashboard', component: DashboardPageComponent },
+  { path: 'patient-list', component: PatientListPageComponent },
+  { path: 'register-patient', component: RegisterPatientPageComponent }
 ];
 
 @NgModule({

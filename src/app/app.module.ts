@@ -13,7 +13,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 
 // COMPONENTS
-import { PatientListComponent } from './components/patient-list/patient-list.component';
+import { PatientListComponent } from './components/patient/patient-list/patient-list.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { SidebarItemComponent } from './components/layouts/sidebar-item/sidebar-item.component'
@@ -21,6 +21,11 @@ import { AppRoutingModule } from './router/app-routing.module';
 import { AppComponent } from './components/app/app.component';
 import { MainContentComponent } from './components/layouts/main-content/main-content.component';
 import { ContentViewComponent } from './components/layouts/content-view/content-view.component';
+import { PatientListPageComponent } from './views/patient-list-page/patient-list-page.component';
+import { DashboardPageComponent } from './views/dashboard-page/dashboard-page.component';
+import { RegisterPatientPageComponent } from './views/register-patient-page/register-patient-page.component';
+import { RegisterPatientComponent } from './components/patient/register-patient/register-patient.component';
+import { DashboardComponent } from './components/dashboard/dashboard/dashboard.component';
 
 
 @NgModule({
@@ -32,7 +37,12 @@ import { ContentViewComponent } from './components/layouts/content-view/content-
     SidebarComponent,
     MainContentComponent,
     SidebarItemComponent,
-    ContentViewComponent
+    ContentViewComponent,
+    PatientListPageComponent,
+    DashboardPageComponent,
+    RegisterPatientPageComponent,
+    RegisterPatientComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
