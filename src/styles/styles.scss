@@ -2,7 +2,7 @@
 // @import "~bootstrap/dist/css/bootstrap.css";
 /* Importing Bootstrap SCSS file. */
 $breadcrumb-divider: none;
-@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "~bootstrap/scss/bootstrap";
 @import "./variables/_bootstrap";
 @import "./icons/material-icon.scss";
 

@@ -26,6 +26,7 @@ import { DashboardPageComponent } from './views/dashboard-page/dashboard-page.co
 import { RegisterPatientPageComponent } from './views/register-patient-page/register-patient-page.component';
 import { RegisterPatientComponent } from './components/patient/register-patient/register-patient.component';
 import { DashboardComponent } from './components/dashboard/dashboard/dashboard.component';
+import { ContentCardComponent } from './components/layouts/content-card/content-card.component';
 
 
 @NgModule({
@@ -42,7 +43,8 @@ import { DashboardComponent } from './components/dashboard/dashboard/dashboard.c
     DashboardPageComponent,
     RegisterPatientPageComponent,
     RegisterPatientComponent,
-    DashboardComponent
+    DashboardComponent,
+    ContentCardComponent
   ],
   imports: [
     BrowserModule,

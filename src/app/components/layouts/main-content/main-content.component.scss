@@ -23,8 +23,21 @@
 
 .custom-height {
   height: 70px;
+  box-shadow: 0 4px 5px -3px rgba(43, 43, 43, 0.1);
 }
 
 .bg-content {
-  background-color: $gray-200;
+  background-color: #f2f7fb;
+}
+
+.app-content {
+  font-family: "Quicksand",sans-serif;
+}
+
+.app-navbar {
+  font-family: "Quicksand",sans-serif;
+}
+
+.app-sidebar {
+  font-family: "Quicksand",sans-serif;
 }

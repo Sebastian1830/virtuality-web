@@ -1,5 +1,5 @@
 <div class="center-content is-pointer item mb-4" [ngClass]="{'closed': !openItem}" [routerLink]="link">
-    <i class="material-icons primary md-dark icon" [ngClass]="openItem ? 'mr-2' : 'only-icon'">{{ icon }}</i>
+    <i class="{{'material-icons-round primary md-dark md-'+icon+' icon'}}" [ngClass]="openItem ? 'mr-2' : 'only-icon'"></i>
     <span *ngIf="openItem">
         <ng-content></ng-content>
     </span>
