@@ -8,7 +8,7 @@ import { countries } from '../../../data/example-chart-line';
 })
 export class DashboardComponent implements OnInit {
   countries: any[] = [];
-  view: [number, number] = [700, 300];
+  view: [number, number] = [700, 320];
 
   // opciones
   legend: boolean = true;
@@ -28,6 +28,7 @@ export class DashboardComponent implements OnInit {
 
   constructor() {
     Object.assign(this, { countries });
+    this.view = [innerWidth / 1.9, 320];
   }
 
   ngOnInit(): void {
@@ -43,5 +44,9 @@ export class DashboardComponent implements OnInit {
 
   onDeactivate(data: any) {
     console.log('Deactivate', JSON.parse(JSON.stringify(data)));
+  }
+
+  onResize(event: any) {
+    this.view = [event.target.innerWidth / 1.9, 320];
   }
 }
