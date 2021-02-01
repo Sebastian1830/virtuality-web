@@ -11,6 +11,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatTableModule } from '@angular/material/table';
 
 // COMPONENTS
 import { PatientListComponent } from './components/patient/patient-list/patient-list.component';
@@ -44,7 +46,7 @@ import { ContentCardComponent } from './components/layouts/content-card/content-
     RegisterPatientPageComponent,
     RegisterPatientComponent,
     DashboardComponent,
-    ContentCardComponent
+    ContentCardComponent,
   ],
   imports: [
     BrowserModule,
@@ -60,7 +62,9 @@ import { ContentCardComponent } from './components/layouts/content-card/content-
     MatSliderModule,
     MatButtonModule,
     MatSidenavModule,
-    MatIconModule
+    MatIconModule,
+    MatPaginatorModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

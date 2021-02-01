@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { countries } from '../../../data/example-chart-line';
+import { bubbleData } from '../../../data/example-chart-bubble';
 
 @Component({
   selector: 'dashboard',
@@ -8,19 +9,34 @@ import { countries } from '../../../data/example-chart-line';
 })
 export class DashboardComponent implements OnInit {
   countries: any[] = [];
+  bubbleData: any[] = [];
   view: [number, number] = [700, 320];
 
-  // opciones
+  // opciones charts
+  showYAxisLabel: boolean = true;
+  showXAxisLabel: boolean = true;
+  xAxisLabel: string = 'Año';
+  yAxisLabel: string = 'Poblacion';
+
+  // opciones chart-line
   legend: boolean = true;
   showLabels: boolean = true;
   animations: boolean = true;
   xAxis: boolean = true;
   yAxis: boolean = true;
-  showYAxisLabel: boolean = true;
-  showXAxisLabel: boolean = true;
-  xAxisLabel: string = 'Año';
-  yAxisLabel: string = 'Poblacion';
   timeline: boolean = true;
+
+  // options chart-bubble
+  showXAxis: boolean = true;
+  showYAxis: boolean = true;
+  gradient: boolean = false;
+  showLegend: boolean = true;
+  maxRadius: number = 20;
+  minRadius: number = 5;
+  yScaleMin: number = 70;
+  yScaleMax: number = 85;
+  xScaleMin!: number;
+  xScaleMax!: number;
 
   colorScheme = {
     domain: ['#5AA454', '#E44D25', '#CFC0BB', '#7aa3e5', '#a8385d', '#aae3f5']
@@ -28,6 +44,7 @@ export class DashboardComponent implements OnInit {
 
   constructor() {
     Object.assign(this, { countries });
+    Object.assign(this, { bubbleData });
     this.view = [innerWidth / 1.9, 320];
   }
 
